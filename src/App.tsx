@@ -1,12 +1,16 @@
 
-import Greeting from "./components/greeting/index"
+import Greeting, {Component1, GreetingAndParamenter} from "./components/greeting/index"
+import { Component } from "./components/greeting/index"
 
 function App() {
 
   return (
     <div>
        <Greeting />
-    </div>
+       <Component/>
+       <Component1 text="Hello React with TypeScript" />;
+       <GreetingAndParamenter text="Hello React with TypeScript" index="24" />
+       </div>
   )
 }
 
